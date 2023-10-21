@@ -62,14 +62,16 @@
   display: relative;
 }
 .project_card:hover {
-  transform: scaleX(1.15);
+  transform: scale(1.15);
   /* width: 150%; */
 }
 .project_card:hover  .inner_box_image {
   animation: fadeInImage 300ms ease-in-out forwards;
 }
 
-
+.logo:hover   {
+  transform: scale(1.10);
+}
 /* .project_card:hover {
   transform: scale(1.1);
 } */

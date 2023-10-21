@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
+import Github from "../../../static/img/github-mark-white.svg"
 
 const ProjectCard = ({ data }) => {
   return (
@@ -9,7 +10,7 @@ const ProjectCard = ({ data }) => {
           <div className={styles.inner_box_image}>
             <img
               src={data.image}
-              loading="eager"              
+              loading="eager"
               alt="Project Image"
               className="object-cover w-full h-full rounded-t-2xl"
             />
@@ -21,12 +22,12 @@ const ProjectCard = ({ data }) => {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-around gap-2 -mt-5 text-xs font-medium md:text-sm text-violet-300 ">
+        <div className="flex items-center justify-around font-light -mt-9">
           <a
-          href={data.github}
-          className="flex items-center px-6 py-2 font-bold text-sm rounded-full bg-violet-800 hover:text-lime-100 hover:bg-violet-600 hover:no-underline"
+            href={data.github}
+            className={`px-2 py-2 ${styles.logo}`}
           >
-            Github
+            <Github />
           </a>
         </div>
       </div>
